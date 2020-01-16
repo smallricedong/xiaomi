@@ -1,0 +1,67 @@
+页面{
+	登录 注册
+	主页上的一些东西
+	客服
+	}
+
+
+水平线标签，在页面中插入一条水平分割线 <hr>
+使用 &lt; 在页面中呈现 "<"
+使用 &gt; 在页面中呈现 ">"
+使用 &nbsp; 在页面中呈现一个空格
+使用 &copy; 在页面中呈现版权符号"©"
+使用 &yen; 在页面中呈现人民币符号"￥"
+
+
+
+<div id="top">页面顶部区域</div>
+<div id="main">页面主体区域</div>
+<div id="bottom">页面底部区域</div>
+
+
+
+无序列表
+<ol>
+	<li>list item 列表项</li> 
+	<li>list item 列表项</li>
+	<li>list item 列表项</li>
+</ol>
+ <ul>
+  	<li>list item 列表项</li> 
+  	<li>list item 列表项</li>
+  	<li>list item 列表项</li>
+  </ul>
+
+
+表格标签
+<!-- 创建表格标签 -->
+<table>
+	 <!-- 创建行标签 -->
+	<tr>
+		<!-- 行中创建单元格以显示数据 -->
+		<td>姓名</td>
+		<td>年龄</td>
+		<td>班级</td>
+	</tr>
+	<tr>
+		<td>迪丽热巴</td>
+		<td>20</td>
+		<td>002</td>
+	</tr>
+</table>
+
+
+单元格属性      作用       取值
+colspan  跨列合并单元格   无单位数值 
+rowspan  跨行合并单元格   无单位数值
+
+
+
+行分组标签：可以将表格中的若干行划分为一组，表示表头，表尾及表格主体，默认在表格中创建的所有行都会被自动加入表格主体中
+<table border="1px" width="300px" height="300px">
+	<thead></thead>
+    <tfoot></tfoot>
+    <tbody></tbody>
+</table>
+
+

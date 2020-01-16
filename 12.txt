@@ -1,0 +1,38 @@
+练习1：
+*  创建数据库 books
+*  在该数据库下创建数据表 book
+   字段如下：
+   id  书名  作者  出版社  价格  备注
+   数据类型和约束条件自己拟定
+
+*  在数据表book中插入几条数据（>4）
+   作者： 老舍   鲁迅   钱钟书  沈从文  冰心
+         韩寒   郭敬明
+
+   价格： 30 --- 120
+
+   出版社 ：  中国文学   中国教育   机械工业
+
+ 作业 ： 查找价格30多的图书
+select * from book where price between 30 and 40;
+        查找出版社为中国教育出版社的
+select * from book where company_name ='中国教育';
+        查找老舍写的，中国文学出版社的
+select * from book where company_name ='中国文学' and author_name = '老舍';
+        查找备注不为空的
+select * from book where remark is not null;
+        查找价格超过60的，只看书名和价格
+select book_name,price from book where price >60;
+        查找价格超过100的或者鲁迅写的
+select * from book where price>100 or author_name='鲁迅';
+       * 熟练语句
+
+
+
+
+
+
+
+
+
+
